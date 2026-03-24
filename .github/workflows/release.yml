@@ -15,7 +15,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Créer le zip
-        run: zip mundamanager-fr-${{ github.ref_name }}.zip manifest.json translations.js content.js README.md
+        run: zip mundamanager-fr-${{ github.ref_name }}.zip manifest.json translations.js content.js README.md icon.png
 
       - name: Publier la release
         uses: softprops/action-gh-release@v2
