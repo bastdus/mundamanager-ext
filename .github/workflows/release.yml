@@ -1,0 +1,24 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Créer le zip
+        run: zip mundamanager-fr-${{ github.ref_name }}.zip manifest.json translations.js content.js README.md
+
+      - name: Publier la release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: mundamanager-fr-${{ github.ref_name }}.zip
+          generate_release_notes: true
