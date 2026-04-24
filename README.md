@@ -36,9 +36,9 @@ Toutes les traductions sont dans `translations.js`, un dictionnaire trié alphab
 
 ```js
 const TRANSLATIONS = {
-	'Add Fighter': 'Ajouter un Combattant',
-	Campaign: 'Campagne',
-	// ...
+  "Add Fighter": "Ajouter un Combattant",
+  Campaign: "Campagne",
+  // ...
 };
 ```
 
@@ -86,7 +86,7 @@ GitHub Actions génère alors automatiquement le fichier `mundamanager-fr.zip` e
 
 L'extension injecte deux fichiers sur toutes les pages de `mundamanager.com` :
 
-- **`translations.js`** — ~1 100 entrées anglais → français
+- **`translations.js`** — ~1 600 entrées anglais → français
 - **`content.js`** — moteur de traduction
 
 Le moteur :
